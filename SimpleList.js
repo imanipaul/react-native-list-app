@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { StyleSheet, Text, VIew, FLatList } from 'react-native';
+import { StyleSheet, Text, View, FlatList, SafeAreaView } from 'react-native';
 
 class SimpleList extends Component {
     constructor(props) {
@@ -34,9 +34,11 @@ class SimpleList extends Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                <FlatList data={this.state.data} renderItem={this._renderItem} />
-            </View>
+            <SafeAreaView style={styles.safearea}>
+                <View style={styles.container}>
+                    <FlatList data={this.state.data} renderItem={this._renderItem} />
+                </View>
+            </SafeAreaView>
         );
     }
 }
@@ -53,6 +55,10 @@ const styles = StyleSheet.create({
         padding: 42,
         borderWidth: 1,
         borderColor: '#dddddd'
+    },
+    safearea: {
+        flex: 1,
+        backgroundColor: 'white'
     }
 });
 
