@@ -3,6 +3,7 @@ import SimpleList from './SimpleList'
 import MockBookList from './MockBookList'
 import BookList from './BookList'
 import LayoutPractice from './LayoutPractice'
+import Mondrian from './Mondrian'
 
-export default LayoutPractice
+export default Mondrian
 
