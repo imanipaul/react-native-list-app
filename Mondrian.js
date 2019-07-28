@@ -1,6 +1,8 @@
 import React from 'react'
 import { StyleSheet, View, Text } from 'react-native'
 
+import styles from './MondrianStyles'
+
 class Mondrian extends React.Component {
     render() {
         return (
